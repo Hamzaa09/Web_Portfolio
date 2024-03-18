@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+/* heading */
+
+.skills-hd {
+    text-align: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.skills-hd h1 {
+    font-size: 6vh;
+    font-weight: bolder;
+    color: white;
+    padding-top: 4vh;
+}
+
+span {
+    color: goldenrod;
+}
+
+/* body */
+
+.skills-main {
+    height: 85vh;
+    width: 100%;
+}
+
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vh 10vh -2vh 5vh;
+    padding-right: 24vh;
+    height: 15vh;
+}
+
+.headings h4 {
+    font-size: 3.8vh;
+    color: white;
+}
+
+
+.cd-skills {
+    display: inline-block;
+    border: .3rem solid goldenrod;
+    border-radius: 2%;
+    background-color: transparent;
+    margin: 0vh 0 5vh 3vh;
+    height: 59vh;
+    width: 46%;
+    position: relative;
+}
+
+.cd-skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: -1;
+    transition: .3s;
+}
+
+.cd-skills:hover::before {
+    width: 100%;
+}
+
+.pf-skills {
+    display: inline-block;
+    border: .3rem solid goldenrod;
+    border-radius: 2%;
+    background-color: transparent;
+    margin: 0vh 0 5vh 5vh;
+    height: 59vh;
+    width: 46%;
+    position: relative;
+}
+
+.pf-skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: -1;
+    transition: .3s;
+}
+
+.pf-skills:hover::before {
+    width: 100%;
+}
+
+.progressbar h3 {
+    font-size: 2.2vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.bar{
+    height: 1.4rem;
+    border: .3vh solid goldenrod;
+    border-radius: .2rem ;
+    margin: 0vh 1vh 1vh 1vh;
+}
+
+.bar span{
+    display: block;
+    height: 80%;
+    background-color: goldenrod;
+    border-radius: .2rem;
+    width: 90%;
+    margin: .2vh;
+}
+
+
+.cd-skills .progressbar:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.cd-skills .progressbar:nth-child(2) .bar span{
+    width: 80%;
+}
+.cd-skills .progressbar:nth-child(3) .bar span{
+    width: 2%;
+}
+.cd-skills .progressbar:nth-child(4) .bar span{
+    width: 1%;
+}
+.cd-skills .progressbar:nth-child(5) .bar span{
+    width: 0.1%;
+}
+
+
+
+.pf-skills .progressbar:nth-child(1) .bar span{
+    width: 60%;
+}
+
+.pf-skills .progressbar:nth-child(2) .bar span{
+    width: 10%;
+}
+
+.pf-skills .progressbar:nth-child(3) .bar span{
+    width: 2%;
+}
+
+.pf-skills .progressbar:nth-child(4) .bar span{
+    width: 1%;
+}
+
+.pf-skills .progressbar:nth-child(5) .bar span{
+    width: 0.1%;
+}

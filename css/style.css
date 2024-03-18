@@ -1,0 +1,193 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --main-bg-color: rgba(0, 0, 0, 0.795);
+  }
+
+  body {
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+    overflow: hidden;
+  }
+
+
+  header {
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+  }
+
+  header h3 {
+    font-size: 2rem;
+    padding-left: 4px;
+    margin-left: 3rem;
+    font-weight: 500;
+    border-bottom: .6vh solid transparent;
+    transition: .1s;
+    position: relative;
+  }
+
+
+  header h3:hover {
+    border-bottom: .6vh solid goldenrod;
+
+  }
+
+
+  nav ul a {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+    transition: .3s;
+  }
+
+  nav ul a:hover,
+  nav ul a.home-page {
+    color: goldenrod;
+  }
+
+  /* main */
+
+  .container {
+    display: flex;
+    cursor: default;
+  }
+
+  .heading {
+    margin: 10rem 0 1rem 2rem;
+    max-width: 60rem;
+    height: 10vh;
+    cursor: default;
+  }
+
+  .heading h1 {
+    position: relative;
+    font-size: 6vh;
+    font-weight: bolder;
+    max-width: 60vw;
+   
+  }
+
+
+  .animation {
+    height: 7vh;
+    width: auto;
+    margin: 0rem 0 1rem 3rem;
+    max-width: 60rem;
+  }
+
+  .animation h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 1px goldenrod;
+  }
+  
+
+  .text {
+    margin: 3rem 0 1rem 3rem;
+    max-width: 40rem;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+  }
+
+
+  /* button */
+
+
+  .button {
+    margin: 9vh 0 0 10vw;
+  }
+
+  .button .btn {
+    font-size: large;
+    height: 5vh;
+    width: 15vw;
+    border-radius: .1rem;
+    border: 1px solid;
+    background-color: transparent;
+    color: goldenrod;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+
+  .button .btn:hover {
+    background-color: goldenrod;
+    color: rgba(0, 0, 0, 0.795);
+
+  }
+
+  /* image */
+
+
+.container .image{
+  position: relative;
+  top: 8vh;
+  right: -3vw;
+  display: inline-block;
+  height: 60vh;
+  width: 40vw;
+  background: url('/home.png') no-repeat center ;
+  background-size: contain;
+  animation: updown 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+
+
+
+  /* icons */
+
+  .icons {
+    position: absolute;
+    bottom: 1vh;
+    right: -3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    width: 15vw;
+  }
+
+  .icons i {
+    font-size: 2vh;
+    margin: -5vh;
+    padding: .3em;
+    transition: .3s;
+    border: .1em solid transparent;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .icons i:hover {
+    background-color: goldenrod;
+    color: rgba(0, 0, 0, 0.795);
+  }
+
+
+
+@keyframes updown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

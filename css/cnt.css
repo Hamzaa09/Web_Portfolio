@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+ background-color: rgba(0, 0, 0, 0.795);
+}
+
+.cnt-heading {
+    text-align: center;
+    margin: 6vh 0 0 0;
+}
+
+.cnt-heading h1 {
+    color: white;
+    font-size: 6vh;
+    font-weight: bolder;
+}
+
+span{
+    color: goldenrod;
+}
+
+.cnt-parent {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.name-email{
+    display: block;
+}
+
+.name-box {
+    display: inline-flex;
+    position: relative;
+}
+
+#name{
+    font-size: 1rem;
+    height: 7vh;
+    width: 25vw;
+    background-color: transparent;
+    border: .3vh solid goldenrod;
+    border-radius: .5vh;
+    color: white;
+    margin-right: .7vh;
+    padding: 1vh;
+}
+
+.name-box .focus {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: -1;
+    transition: .3s;
+}
+
+.name-box input:focus~ .focus,
+.name-box input:valid~ .focus{
+    width: 98%;
+}
+
+#name::placeholder{
+    color: white;
+}
+
+
+.email-box {
+    display: inline-block;
+}
+
+#email{
+    font-size: 1rem;
+    height: 7vh;
+    width: 25vw;
+    background-color: transparent;
+    border: .3vh solid goldenrod;
+    border-radius: .5vh;
+    color: white;
+    margin-right: .7vh;
+    padding: 1vh;
+}
+
+#email::placeholder{
+    color: white;
+}
+
+
+.pass-mbl{
+    display: block;
+    margin-top: 1.5vh;
+}
+
+.pass-box {
+    display: inline-block;
+}
+
+#pass{
+    font-size: 1rem;
+    height: 7vh;
+    width: 25vw;
+    background-color: transparent;
+    border: .3vh solid goldenrod;
+    border-radius: .5vh;
+    color: white;
+    margin-right: .7vh;
+    padding: 1vh;
+}
+
+#pass::placeholder{
+    color: white;
+}
+
+
+.mbl-box {
+    display: inline-block;
+}
+
+#mbl-no{
+    font-size: 1rem;
+    height: 7vh;
+    width: 25vw;
+    background-color: transparent;
+    border: .3vh solid goldenrod;
+    border-radius: .5vh;
+    color: white;
+    margin-right: .7vh;
+    padding: 1vh;
+}
+#mbl-no::placeholder{
+    color: white;
+}
+
+.txt-box {
+    margin-top: 1.5vh;
+    margin-right: .5vw;
+    position: relative;
+}
+
+.txt-box .focus {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 97%;
+    width: 0;
+    border-radius: 1vh;
+    background-color:rgba(0, 0, 0, 0.199);
+    z-index: -1;
+    transition: .3s;
+}
+
+.txt-box textarea:focus~.focus, 
+h textarea:valid~.focus {
+    width: 100%;
+}
+
+#text-area{
+    font-size: 1rem;
+    height: 30vh;
+    width: 50.9vw;
+    background-color: transparent;
+    border: .3vh solid goldenrod;
+    border-radius: .5vh;
+    color: white;
+    padding: 1vh;
+}
+
+
+textarea::placeholder{
+    color: white;
+}
+
+
+
+/* button */
+
+
+.cnt-button{
+    margin-left: 43%;
+}
+
+  .cnt-button .cnt-btn {
+    font-size: large;
+    height: 5vh;
+    width: 10vw;
+    border-radius: .1rem;
+    border: 1px solid ;
+    background-color: goldenrod;
+    color: rgba(0, 0, 0, 0.795);  
+    transition: .3s;
+}
+
+
+.cnt-button .cnt-btn:hover{
+    background-color: transparent;
+    color: goldenrod;  
+    
+  }
+
+
+
+
+  /* Footer */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 9vh;
+    width: 100%;
+    padding: 0 10vh 0 40%;
+  }
+
+  .footer .footer-text {
+    color: aliceblue;
+  }
+  
+
+  .footer .f-icons {
+    border: .1rem solid white ;
+    border-radius: .3vh;
+    width: 4vw;
+    height: 4.5vh;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 1px;
+}
+
+.f-icons ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.075);
+    z-index: 1;
+    transition: .3s;
+}
+
+.f-icons:hover ::before {
+    width: 100%;
+}
+
+.f-icons a {
+   
+    text-decoration: none;
+    color: white;
+}
+
+.f-icons a i {
+    position: absolute;
+    top: .5vh;
+    left: 1vh;
+}

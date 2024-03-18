@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+:root{
+   --main-bg-color:rgba(0, 0, 0, 0.795);
+}
+
+body{
+  background-color: var(--main-bg-color);
+}
+
+
+header {
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+header h3 {
+  position: relative;
+  font-size: 2rem;
+  padding-left: 4px;
+  margin-left: 3rem;
+  font-weight: 500;
+  border-bottom: .6vh solid transparent;
+  transition: .1s;
+
+}
+
+
+header h3:hover {
+  position: relative;
+  border-bottom: .6vh solid goldenrod;
+
+
+}
+
+
+nav ul a {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+  transition: .3s;
+}
+
+nav ul a:hover,
+nav ul a.home-page {
+  color: goldenrod;
+}
+
+
+.heading{
+    margin: 3vh 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-weight: bolder;
+    font-size: 6vh ;
+    color: white;
+    cursor:default ;
+}
+
+span{
+    color: goldenrod;
+}
+
+
+
+
+/* image */
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img{
+  height: 30vh;
+  width: 30vh;
+  border: .3rem solid goldenrod;
+  border-radius: 50%;
+}
+
+.img{
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  height: 33vh;
+  width: 33vh;
+  border-top: .3rem solid transparent;
+  border-bottom: .3rem solid transparent;
+  border-right: .3rem solid goldenrod;
+  border-left: .3rem solid goldenrod;
+  border-radius: 50%;
+  transform: translate(-50%,-50%) rotate(0);
+  animation: aboutspinner 8s linear infinite;
+}
+
+
+.text {
+  margin: 3rem 0 0rem 0rem;
+  max-width: 100%;
+  height: 10vh;
+}
+
+.text h3 {
+  color: white;
+  text-align: center;
+  font-size: 5vh;
+  font-weight: 900;
+  transition: .2s;
+  cursor:default ;
+}
+.text h3:hover{
+  opacity: 0.3;
+}
+
+.paragraph {
+  margin: 0rem 3rem 1rem 3rem;
+  max-width: 100%;
+}
+
+.paragraph p {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+  cursor:default ;
+}
+
+
+
+/* button */
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin: 9vh 0 0 0vw;
+  max-width: 99%;
+}
+
+.button .btn {
+  font-size: large;
+  height: 5vh;
+  width: 15vw;
+  border-radius: .1rem;
+  border: 1px solid ;
+  background-color: transparent;
+  color: goldenrod;  
+  transition: .3s;
+}
+
+
+.button .btn:hover{
+  background-color: goldenrod;
+  color: rgba(0, 0, 0, 0.795);  
+  
+}
+
+
+/* keyframes */
+
+@keyframes aboutspinner{
+  100%{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+

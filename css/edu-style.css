@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-bg-color: #000000CB;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+.edu-h{
+    text-align: center;
+    height: 15vh;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    padding-top: 4vh;
+    font-size: 6vh ;
+    color: white;
+}
+
+span{
+    color: goldenrod;
+}
+
+.edu-parent{
+    /* background-color: azure; */
+    height: 85vh;
+}
+
+
+
+.main-h{
+    /* background-color: blueviolet; */
+    padding: 8px;
+    width: 100%;
+    height: 10vh;
+}
+
+.edu-h3{
+    display: inline-block;
+    /* background-color: blue; */
+    height: 8vh;
+    width: 48%;
+}
+
+.edu-h3{
+    padding: 2vh 0 0 6vh;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.jour-h3{
+    display: inline-block;
+    /* background-color: papayawhip; */
+    margin-left: 2vh;
+    height: 8vh;
+    width: 48%;
+}
+
+.jour-h3{
+    padding: 2vh 0 0 6vh;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.main-t{
+    display: flex;
+    /* background-color: burlywood; */
+    height: 75vh;
+}
+
+
+.line-left{
+    display: inline-block;
+    background-color: goldenrod;
+    margin: 1vh 0 0 2vh;
+    height: 70vh;
+    width: .2vw;
+}
+
+.circle1{
+    position: absolute;
+    top: 14rem;
+    left: 0.7rem;
+    color: goldenrod;
+    height: 1vh;
+    width: 1vw;
+    border: 1vh solid goldenrod;
+    border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    top: 27rem;
+    left: 0.7rem;
+    color: goldenrod;
+    height: 1vh;
+    width: 1vw;
+    border: 1vh solid goldenrod;
+    border-radius: 50%;
+}
+.circle3{
+    position: absolute;
+    top: 40rem;
+    left: 0.7rem;
+    color: goldenrod;
+    height: 1vh;
+    width: 1vw;
+    border: 1vh solid goldenrod;
+    border-radius: 50%;
+}
+
+.content{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0vh 0 0 2vh;
+    /* background-color: blue; */
+    width: 46vw;
+    height: 70vh;
+    padding: 1vh;
+}
+
+.content .box1{
+    background-color: transparent;
+    color: white;
+    border: .3rem solid goldenrod;
+    border-radius: .5rem;
+    padding: 2vh;
+    height: 22vh;
+    width: 50vw;
+}
+
+ i {
+    color: goldenrod;
+}
+
+
+
+.h-4{
+    padding: .5rem 0 .5rem 0;
+    font-size: larger;
+
+}
+.box2{
+    border: .3rem solid goldenrod;
+    border-radius: .5rem;
+    padding: 2vh;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: white;
+    height: 22vh;
+    width: 50vw;
+}
+
+
+
+.box3{
+    border: .3rem solid goldenrod;
+    border-radius: .5rem;
+    padding: 2vh;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: white;
+    height: 22vh;
+    width: 50vw;
+}
+
+
+.line-left2{
+    display: inline-block;
+    background-color: goldenrod;
+    margin: 1vh 0 0 4vh;
+    height: 45vh;
+    width: .2vw;
+}
+
+.cr1{
+    position: absolute;
+    top: 14rem;
+    left: 41rem;
+    color: goldenrod;
+    height: 1vh;
+    width: 1vw;
+    border: 1vh solid goldenrod;
+    border-radius: 50%;
+}
+.cr2{
+    position: absolute;
+    top: 27rem;
+    left: 41rem;
+    color: goldenrod;
+    height: 1vh;
+    width: 1vw;
+    border: 1vh solid goldenrod;
+    border-radius: 50%;
+}
+
+
+.content2{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: first baseline;
+    margin: 0vh 0 0 2vh;
+    width: 46vw;
+    height: 70vh;
+    padding: 1vh;
+}
+
+.bx1{
+    border: .3rem solid goldenrod;
+    border-radius: .5rem;
+    padding: 2vh;
+    background-color: transparent;
+    color: white;
+    height: 22vh;
+    width: 50vw;
+}
+
+
+.bx2{
+    border: .3rem solid goldenrod;
+    border-radius: .5rem;
+    padding: 2vh;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: white;
+    height: 22vh;
+    width: 50vw;
+}
+
+
